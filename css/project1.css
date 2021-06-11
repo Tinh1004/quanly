@@ -1,0 +1,105 @@
+
+.page{
+    width: 70%;
+    margin: 0 auto;
+}
+form{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+  font-weight: bold;
+  
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit],button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+.page-form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#danhsach .student{
+  display: flex;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0rem 1rem;
+  border-radius: 4px;
+  justify-content: space-between;
+  margin: 0.6rem 0;
+  border: none;
+  transition: 0.25s;
+  border: 1px solid gray;
+}
+
+#danhsach .student:hover{
+  background-color: gray;
+  color: white;
+}
+
+.chua .title{
+    margin: 0;
+    display: flex;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    padding: 0rem 1rem;
+    border-radius: 4px;
+    justify-content: space-between;
+    margin: 0.2rem 0;
+    border: none;
+    transition: 0.25s;
+    background-color: black;
+    color: blanchedalmond;
+}
+h1#tieude{
+  text-align: center;
+  display: block;
+}
+.student p, .title p{
+  width: 15%;
+  text-align: center;
+}
+button:hover{
+  background-color: #45a049;
+}
+
+@media screen and (min-width: 1224px){
+  .chua1{
+    width: 45%;
+    float: left;
+  }
+  .chua2{
+      width: 45%;
+      float: right;
+  }
+}
+@media screen and (max-width: 480px){
+  .chua1{
+    width: 100%;
+  }
+  .chua2{
+      width: 100%;
+  }
+}

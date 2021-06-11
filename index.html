@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sach Gymer</title>
+    <link rel="stylesheet" href="css/project1.css">
+</head>
+<body>
+    <div class="page">
+        <div class="page-form">
+            <h1 id="tieude">Thêm Thành viên</h1>
+            <form>
+                <div class="chua1">
+                    <label for="firstName">Tên</label>
+                    <input type="text" onkeydown="getText()" id="firstName" name="firstName" placeholder="VD: Tính" >
+                    <label for="lastname">Họ và Tên đệm</label>
+                    <input type="text" onkeydown="getText()" id="lastName" name="lastname" placeholder="VD: Phạm Ngọc" >
+                    <label for="age">Tuổi</label>
+                    <input type="number" onkeydown="getText()" id="age" name="age" placeholder="VD: 20" >      
+                    <label for="numberPhone">Số điện thoại</label>
+                    <input type="text" onkeydown="getText()" id="numberPhone" name="numberPhone" placeholder="VD: 0326693102" >              
+                </div>
+                <div class="chua2">
+                    <label for="gender">Giới Tính</label>
+                    <select id="gender" name="hinhthuc">
+                        <option value="Nam">Nam</option>
+                        <option value="Nữ">Nữ</option>
+                    </select>
+                    <label for="hinhthuc">Hình thứ đăng ký</label>
+                    <select id="hinhthuc" name="hinhthuc">
+                        <option value="month">Tháng</option>
+                        <option value="year">Năm</option>
+                    </select>
+                    <label for="soluong">Số lượng</label>
+                    <input type="number" onkeydown="getText()" id="soluong" name="soluong" max='11' placeholder="1" >
+                    <label for="them">Thêm thông tin</label>
+                    <input type="text" id="more" placeholder="Sở thích,Vị trí...">                  
+                </div>
+                <!-- <input type="submit" value="button" onclick="btn()"> -->
+            </form>
+            <button type="button" onclick="btn()">Nhập</button>
+
+        </div>
+        <div class="chua">
+            <div>
+                <h1 id="tieude">Danh sách chứa Học Viên</h1>
+            </div>
+            <div class="title">
+                <p>Họ và tên</p>
+                <p>Tuổi</p>
+                <p>Giới Tính</p>
+                <p>Số điện thoại</p>
+                <p>Hình Thức</p>
+                <p>Số lượng</p>
+                <p>ngày kết thúc</p>
+            </div>
+            <div id="danhsach">
+            </div>
+        </div>
+    </div> 
+</body>
+<script src="js/project1.js"></script>
+</html>
